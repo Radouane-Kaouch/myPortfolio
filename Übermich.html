@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich - PORTFOLIO RADOUANE KAOUCH</title>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 22px;
+            background-color: rgb(236, 227, 215);
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .header-image {
+            width: 800px;
+            height: 400px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            display: block;
+            margin: 50px auto;
+        }
+
+        .headline {
+            color: rgb(51, 18, 18);
+        }
+
+        .image-container {
+            background-color: white;
+            padding: 16px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            color: #831d17;
+            text-decoration: none;
+            margin-left: 10px;
+            font-weight: 700;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .text-highlight {
+            color: #484846;
+            font-size: 47px;
+        }
+
+        .text-container {
+            background-color: #dedede;
+            padding: 8px;
+            color: #484846;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        .legal-content {
+            padding: 8px;
+        }
+
+        .legal-text {
+            margin-right: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="headline" href="index.html" onclick="openLink(event,'index.html')">
+            Creative PORTFOLIO<br> <span class="text-highlight">RADOUANE KAOUCH</span>
+        </h1>
+
+        <div>
+            <a href="Übermich.html" onclick="openLink(event, 'Übermich.html')">Übermich</a>
+            <a href="Bildungshintergrund.html" onclick="openLink(event, 'Bildungshintergrund.html')">Bildungshintergrund</a>
+            <a href="Kontakt.html" onclick="openLink(event, 'Kontakt.html')">Kontakt</a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img class="header-image" src="Radouane_Kaouch.png" alt="Radouane">
+
+        <div class="text-container">
+            Ich bin Radouane Kaouch, 24 Jahre alt, habe einen Abitur in Physik und ein Diplom in Bauingenieurwesen. Als Freiberufler im Internet habe ich praktische Erfahrungen in technischen und analytischen Bereichen gesammelt. Meine Begeisterung für Mathematik und mein Interesse an technischen Lösungen motivieren mich, eine Karriere in der Informationstechnologie anzustreben.
+        </div>
+    </div>
+
+    <div class="legal-content">
+        <span class="legal-text">Radouane Kaouch</span> 
+    </div>
+
+    <script>
+        function openLink(event, link) {
+            event.preventDefault();
+            window.location.href = link;
+        }
+    </script>
+</body>
+
+</html>
